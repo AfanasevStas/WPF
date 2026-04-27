@@ -17,11 +17,11 @@
         </Grid.ColumnDefinitions>
         <TextBox Name="tbInput" Margin="5" 
                  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-                 KeyDown="KeyDown"
+                 KeyDown="button_Click"
                  />
         <ListBox Name="listBox" 
                  Grid.Row="1" Grid.ColumnSpan="2" Margin="5" 
-                 KeyDown="KeyDown"
+                 KeyDown="button_Click"
                  />
         <Grid Grid.Row="0" Grid.Column="1">
             <Grid.ColumnDefinitions>
