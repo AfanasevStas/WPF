@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace Binding
 {
@@ -39,9 +40,9 @@ namespace Binding
             txtInput.Focus();
         }
         public event PropertyChangedEventHandler PropertyChanged;
-        void OnPropertyChanged()
+        void OnPropertyChanged([CallerMemberName]string propertyName = null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("BoundText"));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         private void BtnDefault_Click(object sender, RoutedEventArgs e)
         {
