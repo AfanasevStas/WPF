@@ -16,11 +16,11 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <CustomTextBoxControl:ClearableTextBox Grid.Row="0" Width="250" Height="40" Placeholder="Фамилия"/>
-        <CustomTextBoxControl:ClearableTextBox Grid.Row="1" Width="250" Height="40" Placeholder="Имя"/>
-        <CustomTextBoxControl:ClearableTextBox Grid.Row="2" Width="250" Height="40" Placeholder="Отчество"/>
-        <CustomTextBoxControl:ClearableTextBox Grid.Row="3" Width="250" Height="40" Placeholder="Дата рождения"/>
-        <CustomTextBoxControl:ClearableTextBox Grid.Row="4" Width="250" Height="40" Placeholder="E-mail"/>
-        <CustomTextBoxControl:ClearableTextBox Grid.Row="5" Width="250" Height="40" Placeholder="Телефон"/>
+        <CustomTextBoxControl:ClearableTextBox x:Name="Foc1" Grid.Row="0" Width="250" Height="40" Placeholder="Фамилия"         TabIndex="0" KeyDown="button_Click" />
+        <CustomTextBoxControl:ClearableTextBox x:Name="Foc2" Grid.Row="1" Width="250" Height="40" Placeholder="Имя"             TabIndex="1" KeyDown="button_Click"/>
+        <CustomTextBoxControl:ClearableTextBox x:Name="Foc3" Grid.Row="2" Width="250" Height="40" Placeholder="Отчество"        TabIndex="2" KeyDown="button_Click"/>
+        <CustomTextBoxControl:ClearableTextBox x:Name="Foc4" Grid.Row="3" Width="250" Height="40" Placeholder="Дата рождения"   TabIndex="3" KeyDown="button_Click"/>
+        <CustomTextBoxControl:ClearableTextBox x:Name="Foc5" Grid.Row="4" Width="250" Height="40" Placeholder="E-mail"          TabIndex="4" KeyDown="button_Click"/>
+        <CustomTextBoxControl:ClearableTextBox x:Name="Foc6" Grid.Row="5" Width="250" Height="40" Placeholder="Телефон"         TabIndex="5" KeyDown="button_Click"/>
     </Grid>
 </Window>

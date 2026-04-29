@@ -35,5 +35,10 @@ namespace CustomTextboxControl.View.UserControls
 
         private void txtInput_TextChanged(object sender, TextChangedEventArgs e) =>
             tbPlaceholder.Visibility = txtInput.Text == "" ? Visibility.Visible : Visibility.Hidden;
+
+        private void button_Click(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape) (sender as TextBox).Clear();
+        }
     }
 }
